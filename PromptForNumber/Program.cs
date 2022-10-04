@@ -1,6 +1,4 @@
-﻿using static System.Environment;
-
-bool runAgain = true;
+﻿bool runAgain = true;
 
 while (runAgain)
 {
