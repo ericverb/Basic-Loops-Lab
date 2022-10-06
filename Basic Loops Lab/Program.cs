@@ -11,14 +11,8 @@ do
         Console.WriteLine("Hello, World!");
         playAgain = true;
     }
-    else if (userResponse.ToLower().Trim() == "n")
-    {
-        playAgain = false;
-    }
-    else
-    {
-        playAgain = true;
-    }
+    
+    
 } while (playAgain);
 
 ExitApplication();
