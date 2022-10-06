@@ -18,21 +18,12 @@ while (runAgain)
         }
 
         Console.WriteLine("Would you like to continue (y/n)?");
-        string continueYn  = Console.ReadLine()!.ToLower();
+        string continueYn = Console.ReadLine()!.ToLower();
         if (continueYn.Trim() != "y")
         {
             runAgain = false;
             ExitApplication();
-
         }
-
-
-    }
-
-    else
-    {
-        runAgain = false;
-        ExitApplication();
     }
 }
 

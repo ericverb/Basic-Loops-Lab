@@ -2,9 +2,10 @@
 
 while (doorLocked)
 {
-    Console.WriteLine("Please enter 5 digit combination");
+    Console.WriteLine("Please enter 5 digit key code!");
     int userCombination;
     bool isValid = int.TryParse(Console.ReadLine(), out userCombination);
+
     if (isValid)
     {
         if (userCombination == 13579)
@@ -13,14 +14,5 @@ while (doorLocked)
             doorLocked = false;
             Environment.Exit(0);
         }
-        else
-        {
-            doorLocked = true;
-        }
-    }
-
-    else
-    {
-        doorLocked = true;
     }
 }

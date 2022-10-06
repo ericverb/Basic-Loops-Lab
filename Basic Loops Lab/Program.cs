@@ -16,10 +16,7 @@ do
     else
     {
         ExitApplication();
-
     }
-
-
 } while (playAgain);
 
 Console.WriteLine("Goodbye!");
@@ -29,5 +26,3 @@ void ExitApplication()
     Console.WriteLine("Goodbye!");
     Environment.Exit(0);
 }
-
-

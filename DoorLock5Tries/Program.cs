@@ -3,17 +3,16 @@ int userAttempts = 0;
 
 while (doorLocked)
 {
-    Console.WriteLine("Please enter 5 digit combination");
-    int userCombination;
-    bool isValid = int.TryParse(Console.ReadLine(), out userCombination);
-
-    if (userAttempts == 4)
+    if (userAttempts == 5)
     {
         Console.WriteLine("Too many incorrect attempts!");
         Environment.Exit(0);
     }
     else
     {
+        Console.WriteLine("Please enter 5 digit combination");
+        int userCombination;
+        bool isValid = int.TryParse(Console.ReadLine(), out userCombination);
         if (isValid)
         {
             if (userCombination == 13579)
@@ -22,17 +21,8 @@ while (doorLocked)
                 doorLocked = false;
                 Environment.Exit(0);
             }
-            else
-            {
-                doorLocked = true;
-                userAttempts++;
-            }
         }
 
-        else
-        {
-            doorLocked = true;
-            userAttempts++;
-        }
+        userAttempts++;
     }
 }
