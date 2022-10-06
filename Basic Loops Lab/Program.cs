@@ -1,6 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
-
-bool playAgain = false;
+﻿bool playAgain = false;
 
 do
 {
@@ -13,13 +11,19 @@ do
         Console.WriteLine("Hello, World!");
         playAgain = true;
     }
+    else if (userResponse.ToLower().Trim() == "n")
+    {
+        playAgain = false;
+    }
     else
     {
-        ExitApplication();
+        playAgain = true;
     }
 } while (playAgain);
 
-Console.WriteLine("Goodbye!");
+ExitApplication();
+
+
 
 void ExitApplication()
 {
